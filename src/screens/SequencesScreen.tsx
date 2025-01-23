@@ -6,9 +6,7 @@ const SequencesScreen = () => {
     <div className='container'>
       <h1>Este es mi app</h1>
       <From/>
-
       <Result/>
-      
     </div>
   )
 }
