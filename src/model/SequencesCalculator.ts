@@ -43,7 +43,7 @@ export class SequencesCalculator {
     }
 
     public calculate (n:number) {
-        return 4*this.prime(n) - this.triangular(n-1) / this.fibonacci(n+2)
+        return (4*this.prime(n) - this.triangular(n-1)) / this.fibonacci(n+2)
     }
 
 }
