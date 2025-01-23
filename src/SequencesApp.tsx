@@ -1,16 +1,14 @@
 
 import './App.css'
+import { SequencesProvider } from './context/SequencesContext'
+import SequencesScreen from './screens/SequencesScreen'
 
 function SequencesApp() {
 
   return (
-    <div className='container'>
-      <h1>Este es mi app</h1>
-      {/*FORM Componente */}
-
-      {/* Result component */}
-      <h2>Resultado:3</h2>
-    </div>
+    <SequencesProvider>
+      <SequencesScreen/>
+    </SequencesProvider>
   )
 }
 
