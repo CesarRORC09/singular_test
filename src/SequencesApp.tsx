@@ -6,9 +6,11 @@ import SequencesScreen from './screens/SequencesScreen'
 function SequencesApp() {
 
   return (
-    <SequencesProvider>
-      <SequencesScreen/>
-    </SequencesProvider>
+      <div className='main'>
+        <SequencesProvider>
+            <SequencesScreen/>
+        </SequencesProvider>
+      </div>
   )
 }
 

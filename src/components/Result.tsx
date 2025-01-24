@@ -5,8 +5,8 @@ const Result = () => {
     const {result, error} = useFormViewModel();
     
   return (
-    <div>
-        <h2>{result}</h2>
+    <div className="result">
+        <h2>Result: {result}</h2>
        {error !== '' && <p>{error}</p>}
     </div>
   )
