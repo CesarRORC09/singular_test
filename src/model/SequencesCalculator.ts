@@ -43,7 +43,8 @@ export class SequencesCalculator {
     }
 
     public calculate (n:number) {
-        return (4*this.prime(n) - this.triangular(n-1)) / this.fibonacci(n+2)
+        const result = (4*this.prime(n) - this.triangular(n-1)) / this.fibonacci(n+2);
+        return Math.round(result * 100) /100
     }
 
 }
